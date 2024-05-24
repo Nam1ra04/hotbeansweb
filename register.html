@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="content.css">	
+<style>
+header {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    flex: 0 0 20%;
+}
+
+.flashing-title {
+    animation: flash 1s infinite;
+    font-size: 76px;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff; /* White */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #000000; /* Black */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #000000; /* Black */
+  color: #000000; /* Black */
+}
+
+select {
+  background-color: #ffffff; /* White */
+}
+
+button[type="submit"] {
+  background-color: #000000; /* Black */
+  color: #ffffff; /* White */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #000000; /* Black */
+  color: #ffffff; /* White */
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #0d0d64; /* Medium blue */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #1b011b; /* Purple */
+}
+
+select {
+  background-color: #f5f5dc; /* Beige */
+}
+
+button[type="submit"] {
+  background-color: #0000cd; /* Medium blue */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #800080; /* Purple */
+}
+
+</style>
+</head>
+<body>
+<div class="title"><header>
+<h1 class="flashing-title">Hot BeansWeb</h1>
+</header></div>
+<div class="topnav" align="center">
+  <a href="index.html">HOME</a>
+  <a href="teams.html">TEAMS</a>
+  <a href="career.html">CAREERS</a>
+  <a href="courses.html">COURSES</a>
+  <a href="register.html">REGISTER</a>
+  <a href="contact us.html">CONTACT US</a>
+</div>
+
+<div class="content">
+  <h1>Welcome to HBW!</h1>
+  <div>
+    <div>
+      <div></div>
+    </div>
+  </div>
+  <div>
+    <p>Welcome to Hot Beans Web, We are a small business striving to mainly improve website development to the next level! Register your interest if you want to apply for a job. </p>
+    <p><form>
+    <div class="form-group">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+    </div>
+
+    <div class="form-group">
+      <label for="job-title">Job Title:</label>
+      <select id="job-title" name="job-title" required>
+        <option value="">Select a job title</option>
+        <option value="Software Developer">Software Developer</option>
+        <option value="Graphic Designer">Graphic Designer</option>
+        <option value="Data Analyst">Data Analyst</option>
+        <option value="Marketing Specialist">Marketing Specialist</option>
+      </select>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>&nbsp;</p>
+  </div>
+  <div>
+    <div></div>
+  </div>
+</div>
+
+<div class="footer">
+<p style="color: #000000">PLEASE CONTACT THE FOLLOWING</p>
+ <a href="https://en-gb.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+<a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
+<a href="https://uk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+<a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost" target="_blank"></a>
+<a href="https://www.skype.com/en/" class="fa fa-skype" target="_blank"></a>
+<a href="https://www.android.com/intl/en_uk/" class="fa fa-android" target="_blank"></a>
+<a href="https://foursquare.com/" class="fa fa-foursquare" target="_blank"></a>
+<a href="https://rss.com/" class="fa fa-rss" target="_blank"></a>
+</div>
+
+</body>
+</html>
+
+
+

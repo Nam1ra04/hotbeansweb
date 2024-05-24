@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="content.css">	
+<style>
+header {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    flex: 0 0 20%;
+}
+
+.flashing-title {
+    animation: flash 1s infinite;
+    font-size: 76px;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+ box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+<div class="title"><header>
+<h1 class="flashing-title">Hot BeansWeb</h1>
+</header></div>
+<div class="topnav" align="center">
+  <a href="index.html">HOME</a>
+  <a href="teams.html">TEAMS</a>
+  <a href="career.html">CAREERS</a>
+  <a href="courses.html">COURSES</a>
+  <a href="register.html">REGISTER</a>
+  <a href="contact us.html">CONTACT US</a>
+</div>
+
+<div class="content">
+  <h1>Team Profile</h1>
+  <div>
+    <div>
+      <div></div>
+    </div>
+  </div>
+  <div>
+<h2>"Meet The Team&quot;</h2>
+<p>Meet the dynamic team at Hot BeansWeb, a group of passionate and skilled professionals dedicated to bringing your digital visions to life. Our team comprises seasoned web developers, innovative designers, strategic project managers, and diligent quality assurance specialists, all working in harmony to deliver exceptional web solutions. With decades of collective experience and a commitment to staying abreast of the latest industry trends, our team collaborates closely with clients to ensure each project is a seamless blend of creativity, functionality, and technological excellence. At Hot BeansWeb, we believe that our people are our greatest asset, and their expertise is what sets us apart in the world of web development.</p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="team_1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p>Senior Network Engineer</p>
+        <p>janedoe@egmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="team_2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p>Senior Programmer</p>
+        <p>mikeross@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="team_3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Jenny Doe</h2>
+        <p>Senior Web Developer</p>
+        <p>jennydoe@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="footer">
+<p style="color: #000000">PLEASE CONTACT THE FOLLOWING</p>
+ <a href="https://en-gb.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+<a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
+<a href="https://uk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+<a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost" target="_blank"></a>
+<a href="https://www.skype.com/en/" class="fa fa-skype" target="_blank"></a>
+<a href="https://www.android.com/intl/en_uk/" class="fa fa-android" target="_blank"></a>
+<a href="https://foursquare.com/" class="fa fa-foursquare" target="_blank"></a>
+<a href="https://rss.com/" class="fa fa-rss" target="_blank"></a>
+</div>
+
+</body>
+</html>
+
+
+
